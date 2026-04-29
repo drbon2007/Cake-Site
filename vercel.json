@@ -2,17 +2,16 @@
   "version": 2,
   "name": "sweet-bake-studio",
   "functions": {
-    "pages/recipes.js": {
+    "api/recipes.js": {
       "memory": 128,
       "maxDuration": 60
     }
   },
   "rewrites": [
-    { "source": "/api/ingredients/(.*)", "destination": "/pages/recipes" },
-    { "source": "/api/timer/(.*)", "destination": "/pages/recipes" },
-    { "source": "/recipe/(.*)", "destination": "/pages/recipes" },
-    { "source": "/bake/(.*)", "destination": "/pages/recipes" },
-    { "source": "/", "destination": "/pages/index.html" }
+    { "source": "/api/ingredients/(.*)", "destination": "/api/recipes" },
+    { "source": "/api/timer/(.*)", "destination": "/api/recipes" },
+    { "source": "/recipe/(.*)", "destination": "/api/recipes" },
+    { "source": "/bake/(.*)", "destination": "/api/recipes" }
   ],
   "trailingSlash": false
 }
