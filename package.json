@@ -1,15 +1,7 @@
 {
-  "name": "sweet-bake-studio",
-  "version": "2.0.1",
-  "description": "A beautiful online cake recipe platform with step-by-step baking guides, ingredient lists, and community reviews.",
+  "name": "cake-recipe-book",
+  "version": "2.0.0",
+  "description": "A beautiful online cake recipe book with baking tips, ingredients and community reviews.",
   "private": true,
-  "license": "MIT",
-  "keywords": [
-    "cake",
-    "baking",
-    "recipes",
-    "dessert",
-    "cooking"
-  ],
-  "author": "Sweet Bake Studio"
+  "license": "MIT"
 }
