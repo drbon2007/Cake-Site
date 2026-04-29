@@ -1,17 +1,19 @@
 {
   "version": 2,
-  "name": "sweet-bake-studio",
+  "name": "cake-recipe-book",
   "functions": {
-    "api/recipes.js": {
+    "api/index.js": {
       "memory": 128,
       "maxDuration": 60
     }
   },
   "rewrites": [
-    { "source": "/api/ingredients/(.*)", "destination": "/api/recipes" },
-    { "source": "/api/timer/(.*)", "destination": "/api/recipes" },
-    { "source": "/recipe/(.*)", "destination": "/api/recipes" },
-    { "source": "/bake/(.*)", "destination": "/api/recipes" }
+    { "source": "/", "destination": "/api/index" },
+    { "source": "/recipes/(.*)", "destination": "/api/index" },
+    { "source": "/ingredients/(.*)", "destination": "/api/index" },
+    { "source": "/reviews/(.*)", "destination": "/api/index" },
+    { "source": "/tips/(.*)", "destination": "/api/index" },
+    { "source": "/(.*)", "destination": "/api/index" }
   ],
   "trailingSlash": false
 }
